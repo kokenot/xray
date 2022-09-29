@@ -22,7 +22,6 @@ function main() {
       && unzip "*.zip" \
       && mv xray "/usr/bin" \
       && chmod +x "/usr/bin/xray" \
-      echo -e "Checking Xray Version" \
       && xray version
   fi
 }
