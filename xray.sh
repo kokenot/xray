@@ -6,5 +6,4 @@ mv "/usr/bin/xray "/usr/bin/xray-bak" \
 && unzip "Xray-linux-arm64-v8a.zip" \
 && mv xray "/usr/bin" \
 && chmod +x "/usr/bin/xray" \
-&& rm "*.zip *.dat LICENSE README.md" \
 && xray version
