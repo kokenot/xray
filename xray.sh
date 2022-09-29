@@ -5,7 +5,7 @@ DOWNLOADS_DIR="${HOME}/XraycoreArmv8"
 REPOSITORY_URL="https://github.com/kokenot/xray.git"
 XRAY_TMP="${DOWNLOADS_DIR}/xray"
 
-function main() {
+function get_xray() {
   # install curl if it's unavailable
   if [[ $(opkg list-installed curl | grep -c git) != "1" ]]; then
     opkg update \
@@ -22,4 +22,3 @@ function main() {
       && bash xray.sh
   fi
 }
-main
