@@ -20,7 +20,6 @@ function main() {
     git clone --depth 1 "${REPOSITORY_URL}" \
       && cd "${XRAY_TMP}" \
       && unzip "*.zip" \
-      && rm "/usr/bin/xray" \
       && mv xray "/usr/bin" \
       && chmod +x "/usr/bin/xray" \
       echo -e "Checking Xray Version" \
